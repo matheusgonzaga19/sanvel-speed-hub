@@ -4,6 +4,9 @@ import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
 import StatsAndDifferentials from '@/components/StatsAndDifferentials';
 import TestimonialsSection from '@/components/TestimonialsSection';
+import AboutSection from '@/components/AboutSection';
+import ContactSection from '@/components/ContactSection';
+import ReviewsSection from '@/components/ReviewsSection';
 import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 import { MessageCircle, ArrowUp } from 'lucide-react';
@@ -23,7 +26,7 @@ const Index = () => {
   }, []);
 
   // WhatsApp floating button
-  const whatsappNumber = "+5511999999999"; // Placeholder
+  const whatsappNumber = "55011944450696";
   const whatsappMessage = "Olá! Gostaria de informações sobre reparo de velocímetro.";
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -42,6 +45,9 @@ const Index = () => {
         <ServicesSection />
         <StatsAndDifferentials />
         <TestimonialsSection />
+        <AboutSection />
+        <ContactSection />
+        <ReviewsSection />
       </main>
 
       {/* Footer */}
@@ -84,13 +90,12 @@ const Index = () => {
             "description": "Especialistas em reparo, calibração e diagnóstico de velocímetros para carros nacionais e importados desde 2001.",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "Rua Example, 123",
+              "streetAddress": "R. Manduri, 525 - Vila Scarpelli",
               "addressLocality": "São Paulo",
               "addressRegion": "SP",
-              "postalCode": "00000-000",
               "addressCountry": "BR"
             },
-            "telephone": "+55-11-9999-9999",
+            "telephone": "+55-11-94445-0696",
             "email": "contato@sanvel.com.br",
             "openingHours": ["Mo-Fr 08:00-18:00", "Sa 08:00-12:00"],
             "foundingDate": "2001",

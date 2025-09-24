@@ -1,17 +1,23 @@
 import React from 'react';
 import { Button } from '@/components/ui/button';
-import { Phone, Mail, MapPin, Clock, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, ExternalLink, Youtube, Facebook, Instagram } from 'lucide-react';
 import sanvelLogo from '@/assets/sanvel-logo.png';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
   
   const contactInfo = {
-    phone: "(11) 9999-9999", // Placeholder
-    whatsapp: "+5511999999999", // Placeholder
-    email: "contato@sanvel.com.br", // Placeholder
-    address: "Rua Example, 123 - Bairro - São Paulo/SP - CEP 00000-000", // Placeholder
+    phone: "(11) 94445-0696",
+    whatsapp: "55011944450696",
+    email: "contato@sanvel.com.br",
+    address: "R. Manduri, 525 - Vila Scarpelli - São Paulo/SP",
     hours: "Seg–Sex 8h–18h | Sáb 8h–12h"
+  };
+
+  const socialLinks = {
+    youtube: "https://www.youtube.com/@sanvelcluster",
+    facebook: "https://www.facebook.com/sanvelvelocimetros?mibextid=ZbWKwL",
+    instagram: "https://www.instagram.com/sanvel.velocimetros?igsh=bmd1c3VnaXh3bTM5"
   };
 
   const quickLinks = [
@@ -97,7 +103,7 @@ const Footer: React.FC = () => {
               </a>
 
               <a
-                href="#" // Placeholder for Google Maps URL
+                href="https://www.google.com/maps/place/R.+Manduri,+525+-+Vila+Scarpelli,+São+Paulo+-+SP"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300"
@@ -105,6 +111,39 @@ const Footer: React.FC = () => {
                 <ExternalLink className="w-5 h-5" />
                 <span className="text-sm">Ver no Google Maps</span>
               </a>
+
+              {/* Social Media Links */}
+              <div className="pt-2 space-y-2">
+                <a
+                  href={socialLinks.youtube}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300"
+                >
+                  <Youtube className="w-5 h-5" />
+                  <span className="text-sm">YouTube</span>
+                </a>
+                
+                <a
+                  href={socialLinks.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300"
+                >
+                  <Facebook className="w-5 h-5" />
+                  <span className="text-sm">Facebook</span>
+                </a>
+                
+                <a
+                  href={socialLinks.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center space-x-3 text-muted-foreground hover:text-primary transition-colors duration-300"
+                >
+                  <Instagram className="w-5 h-5" />
+                  <span className="text-sm">Instagram</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>

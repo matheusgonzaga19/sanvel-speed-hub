@@ -4,7 +4,7 @@ import { MapPin, Phone } from 'lucide-react';
 import heroSpeedometer from '@/assets/hero-speedometer.jpg';
 
 const HeroSection: React.FC = () => {
-  const whatsappNumber = "+5511999999999"; // Placeholder
+  const whatsappNumber = "55011944450696";
   const whatsappMessage = "Olá! Gostaria de um orçamento para reparo de velocímetro.";
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 

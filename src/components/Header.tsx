@@ -17,7 +17,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
     { label: 'Avaliações', href: '#avaliacoes' },
   ];
 
-  const whatsappNumber = "+5511999999999"; // Placeholder
+  const whatsappNumber = "55011944450696";
   const whatsappMessage = "Olá! Gostaria de informações sobre reparo de velocímetro.";
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(whatsappMessage)}`;
 
