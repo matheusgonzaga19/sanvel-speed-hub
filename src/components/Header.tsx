@@ -1,7 +1,7 @@
 import React from 'react';
 import { Menu, X, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import sanvelLogo from '@/assets/sanvel-logo.png';
+import sanvelLogoHorizontal from '@/assets/sanvel-logo-horizontal.png';
 
 interface HeaderProps {
   isMenuOpen: boolean;
@@ -28,14 +28,10 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen }) => {
           {/* Logo */}
           <div className="flex items-center space-x-3">
             <img 
-              src={sanvelLogo} 
+              src={sanvelLogoHorizontal} 
               alt="SANVEL Velocímetros" 
-              className="h-8 w-auto"
+              className="h-10 w-auto rounded-lg"
             />
-            <div className="hidden sm:block">
-              <div className="font-heading text-xl text-foreground">SANVEL</div>
-              <div className="text-xs text-muted-foreground -mt-1">Desde 2001</div>
-            </div>
           </div>
 
           {/* Desktop Navigation */}

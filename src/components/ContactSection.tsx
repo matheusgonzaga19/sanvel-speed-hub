@@ -9,7 +9,7 @@ const ContactSection: React.FC = () => {
     whatsapp: "55011944450696",
     email: "contato@sanvel.com.br",
     address: "R. Manduri, 525 - Vila Scarpelli - São Paulo/SP",
-    hours: "Seg–Sex 8h–18h | Sáb 8h–12h"
+    hours: "Seg–Sex 8h30–17h30 (Almoço 12h–13h30) | Sáb/Dom Fechado"
   };
 
   const socialLinks = {
